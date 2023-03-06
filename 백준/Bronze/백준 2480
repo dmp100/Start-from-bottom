@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+#define max(x, y) ((x) > (y) ? (x) : (y)) //기호상수로 정의한 조건연산자
+
+int main() {
+	int a, b, c;
+	scanf_s("%d %d %d", &a, &b, &c);
+	if (a == b && b == c) //세개 다 같은경우
+		printf("%d", 10000 + a * 1000);
+	else if (a == b || a == c) //경우의 수 3개이상일 땐, 둘로 쪼개기
+		printf("%d", 1000 + a * 100); //두개가 같은경우
+	else if (b == c)
+		printf("%d", 1000 + b * 100);
+	else // 하나가 큰 경우
+		printf("%d", max(max(a, b), c) * 100);//얘 뭐임.
+	return 0;
+}
