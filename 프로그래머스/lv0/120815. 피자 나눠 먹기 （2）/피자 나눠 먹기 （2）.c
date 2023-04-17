@@ -8,9 +8,9 @@ int solution(int n) {
     while(1)
     {
         if ((6 * answer)%n !=0) //6조각*1판을 n으로 나눠서 0이 아니면
-            answer++; //1판을 
+            answer++; //계속 answer를 1씩 늘리다보면 answer가 5가 되는때가 되는데 그때 6 * 5는 10으로 나눴을때 나머지가 0이니까
         else
-            break;
+            break; //바깥 while문 브레이크되고 answer 리턴함
     }
     return answer;
 }
