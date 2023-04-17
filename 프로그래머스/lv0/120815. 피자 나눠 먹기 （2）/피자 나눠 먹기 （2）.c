@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 int solution(int n) {
-    int answer = 1;
+    int answer = 1; //피자 6조각=기본 1판
     
     while(1)
     {
-        if ((6 * answer)%n !=0)
-            answer++;
+        if ((6 * answer)%n !=0) //6조각*1판을 n으로 나눠서 0이 아니면
+            answer++; //1판을 
         else
             break;
     }
