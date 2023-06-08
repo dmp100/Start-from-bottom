@@ -13,3 +13,22 @@ int main()
 	}
 
 }
+
+
+
+
+int main()
+{
+	int T;
+	scanf("%d", &T);
+	int A, B, sum;
+	int i = 0;
+	while (i < T)
+	{
+		scanf("%d,%d", &A, &B);
+		sum = A + B;
+		printf("%d\n", sum);
+		i++;
+	}
+
+}
